@@ -1,0 +1,24 @@
+:root {
+  /* hover color */
+  --hover-color: #ff6c00;
+  /* white text color */
+  --w-text-color: #fff;
+  /* title text color */
+  --title-text-color: #303030;
+  /* main text color */
+  --main-text-color: #555;
+  /* comment color */
+  --comment-color: rgba(157, 164, 189, 0.6);
+  /* online color */
+  --online-color: rgba(157, 164, 189, 0.4);
+  /* contact color */
+  --contact-color: #9da4bd;
+}
+
+/* width: 1200px;
+padding: 0 15px; */
+
+/* font-family: 'Raleway', sans-serif; */
+body {
+  font-family: "Open Sans", sans-serif;
+}
