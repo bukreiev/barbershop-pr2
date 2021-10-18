@@ -13,6 +13,10 @@
   --online-color: rgba(157, 164, 189, 0.4);
   /* contact color */
   --contact-color: #9da4bd;
+  /* price line color */
+  --price-line-color: rgba(157, 164, 189, 0.12);
+  /* history box */
+  --history-box-color: #f7f7f7;
 }
 
 /* width: 1200px;
