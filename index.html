@@ -5,46 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="./css/modern-normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <!-- sidbar -->
-      <div class="container uphead">
-        <aside>
-          <a href="index.html"
-            ><img
-              src="./img/Logo.svg"
-              alt="Barbershop-logo"
-              width="65.97px"
-              height="55.46px"
+      <!-- sidebar -->
+      <div class="container up">
+        <aside class="sidebar">
+          <!-- Logo -->
+          <a href="/index.html">
+            <img
+              class="sidebar__logo"
+              src="./img/logo.svg"
+              alt="logo"
+              width="66"
+              height="55"
             />
           </a>
-                              <!-- social-network -->
-          <ul class="social-network-items">
-            <li class="social-network-list">
+          <!-- social-network -->
+            <ul class="sidebar__network">
+            <li>
               <a
-                class="social-network-link"
+                class="sidebar__link"
                 href="https://www.instagram.com/"
                 target="_blank"
-                ><span lang="en">Instagram</span></a
+                ><span class="sidebar__txt" lang="en">Instagram</span></a
               >
             </li>
-            <li class="social-network-list">
+            <li>
               <a
-                class="social-network-link"
+                class="sidebar__link"
                 href="https://www.youtube.com/"
                 target="_blank"
                 ><span lang="en">Youtube</span></a
@@ -54,33 +49,45 @@
 
         </aside>
         <!-- navigation-menu -->
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-list">
-              <a class="nav-link-current" href="index.html">О нас</a>
-            </li>
-            <li class="nav-list">
-              <a class="nav-link" href="">Услуги и цены</a>
-            </li>
-            <li class="nav-list"><a class="nav-link" href="">Мастера</a></li>
-            <li class="nav-list"><a class="nav-link" href="">Контакты</a></li>
-          </ul>
-          <a href="tel:+380441111111">+38 044 111 11 11</a>
-          <button type="button">Онлайн-запись</button>
-        </nav>
+        <div>
+          <nav>
+            <ul class="nav">
+              <li class="nav__list">
+                <a class="nav__link nav__link--active" href="index.html"
+                  >О нас</a
+                >
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="">Услуги и цены</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="">Мастера</a>
+              </li>
+              <li class="nav__list">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+            <a href="tel:+380441111111">+38 044 111 11 11</a>
+            <button type="button">Онлайн-запись</button>
+          </nav>
+            <img class="slider" src="./img/slider1.jpg" alt="slider" />
+            <img class="slider" src="./img/slider2.jpg" alt="slider" />
+            <img class="slider" src="./img/slider3.jpg" alt="slider" />
+            <p>A hair salon for men in Kyiv</p>
+            <h1>BarberShop</h1>
+            <p>
+              Мы эксперты в модных мужских стрижках. </br> 
+              Работаем быстро, осторожно и со вкусом.
+            </p>
+                      <button type="button">Назад</button>
+          <button type="button">Вперед</button>
+
+        </div>
+      </div>
     </header>
     <main>
       <!-- slider -->
-      <section class="slider">
         <div class="container">
-          <p><span lang="en">A hair salon for men in Kyiv</span></p>
-          <h1><span lang="en">BarberShop</span></h1>
-          <p>
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
-            вкусом.
-          </p>
-          <button type="button">Назад</button>
-          <button type="button">Вперед</button>
         </div>
       </section>
 

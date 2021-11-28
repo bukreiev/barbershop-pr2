@@ -1,28 +1,3 @@
-:root {
-  /* hover color */
-  --hover-color: #ff6c00;
-  /* white text color */
-  --w-text-color: #fff;
-  /* title text color */
-  --title-text-color: #303030;
-  /* main text color */
-  --main-text-color: #555;
-  /* comment color */
-  --comment-color: rgba(157, 164, 189, 0.6);
-  /* online color */
-  --online-color: rgba(157, 164, 189, 0.4);
-  /* contact color */
-  --contact-color: #9da4bd;
-  /* price line color */
-  --price-line-color: rgba(157, 164, 189, 0.12);
-  /* history box */
-  --history-box-color: #f7f7f7;
-}
-
-/* width: 1200px;
-padding: 0 15px; */
-
-/* font-family: 'Raleway', sans-serif; */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -50,16 +25,50 @@ li {
   padding: 0 15px;
   margin: 0 auto;
 }
-aside {
-  height: 680px;
-}
-.social-network-items {
+.up {
   display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  transform: rotate(-90deg);
+  width: 148px;
+  height: 680px;
+  padding: 32px 30px 40px 53px;
+  outline: 1px solid tomato;
 }
 
-.uphead {
+.sidebar__logo {
+  position: absolute;
+  top: 32px;
+  left: 53px;
+}
+.sidebar__network {
+  position: absolute;
   display: flex;
+  transform: rotate(-90deg);
+  justify-content: center;
   align-items: center;
+}
+
+.sidebar__network::before {
+  content: "";
+  width: 1px;
+  height: 60px;
+  background-color: #303030;
+  transform: rotate(-90deg);
+  margin-right: 40px;
+}
+
+.sidebar__link {
+  margin-right: 40px;
+  color: #303030;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
 }
